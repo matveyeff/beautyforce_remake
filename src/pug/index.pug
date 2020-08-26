@@ -1,0 +1,207 @@
+extends layout/main
+
+block variables
+	-var title = 'Главная страница'
+
+block content
+	section.hero
+		.container.hero__container
+			.hero__text
+				.hero__subtitle
+					span Лидеры мирового рынка косметики
+					span Эксклюзивные корейские бренды
+				h1.hero__title Beauty
+					span Force
+				a.btn(href="#") Смотреть каталог
+			.hero__pic
+				img(src="images/hero.jpg", alt="")
+	section.about
+		.container
+			.about__content
+				h2.section__title О нас
+				.about__wrapper
+					.about__left
+						h3.section__subtitle Являемся надежным бизнес-партнером
+						a.btn.about__btn(href="#") Подробнее
+					.about__right
+						.about__right-desc
+							p В Beauty Force есть бренды из любого сегмента рынка — масс-маркет, средний сегмент, премиальный и фармацевтический. За время своей работы мы приобрели надежных партнеров по всей России. Мы следим за трендами индустрии красоты и выбираем лучшие бренды.
+						.about__features
+							.features
+								ul.features__list
+									li.features__item
+										.features__item-title 10
+										.features__item-subtitle лет опыта
+									li.features__item
+										.features__item-title 30+
+										.features__item-subtitle популярных брендов
+									li.features__item
+										.features__item-title 25+
+										.features__item-subtitle интернет-магазинов
+									li.features__item
+										.features__item-title 50 000 000
+										.features__item-subtitle покупателей
+	section.excellence
+		.container
+			.slider-excellence
+				h2.section__title.section__title_excellence Преимущества
+				ul.slider-excellence__list
+					li.slider-excellence__item
+						img(src="images/slide-01.jpg", alt="").slider-excellence__img
+						.slider-excellence__text
+							h3.slider-excellence__title Эксклюзивные бренды из Кореи
+							.slider-excellence__desc
+								p Мы ценим качество и уникальность, именно поэтому выбираем косметические бренды из Южной Кореи. Их продукция экологична, а эффективность доказана клиническими испытаниями и многочисленными отзывами наших клиентов.
+				.slider-excellence__btns
+					button.slider-excellence__btn.slider-excellence__btn_prev
+					button.slider-excellence__btn.slider-excellence__btn_next
+	section.section_color-white.brands
+		.container
+			.brands__content
+				h2.section__title.section__title_color-dark Бренды
+				.section__subtitle.section__subtitle_color-dark сотрудничаем #[br]c мировыми брендами
+		.brands-grid
+			.brands-grid__row
+				ul.brands-grid__list
+					li.brands-grid__item
+						img(src="images/opi.png", alt="")
+					li.brands-grid__item
+						img(src="images/opi.png", alt="")
+					li.brands-grid__item
+						img(src="images/opi.png", alt="")
+					li.brands-grid__item
+						img(src="images/opi.png", alt="")
+					li.brands-grid__item
+						img(src="images/opi.png", alt="")
+					li.brands-grid__item
+						img(src="images/opi.png", alt="")
+					li.brands-grid__item
+						img(src="images/opi.png", alt="")
+					li.brands-grid__item
+						img(src="images/opi.png", alt="")
+			.brands-grid__row
+				ul.brands-grid__list
+					li.brands-grid__item
+						img(src="images/opi.png", alt="")
+					li.brands-grid__item
+						img(src="images/opi.png", alt="")
+					li.brands-grid__item
+						img(src="images/opi.png", alt="")
+					li.brands-grid__item
+						img(src="images/opi.png", alt="")
+					li.brands-grid__item
+						img(src="images/opi.png", alt="")
+					li.brands-grid__item
+						img(src="images/opi.png", alt="")
+					li.brands-grid__item
+						img(src="images/opi.png", alt="")
+					li.brands-grid__item
+						img(src="images/opi.png", alt="")
+			a(href="#").btn.btn_color-dark.brands-grid__btn Подробнее
+	section.partners
+		.container
+			.partners__content
+				h2.section__title Партнеры
+				h3.section__subtitle продвигаем бренды #[br]с надежными партнерами
+				ul.partners__list
+					li.partners__item
+						+icon('ozon', 'partners__logo partners__logo--size-140')
+					li.partners__item.partners__item--color-grey.partners__item--position-above
+						+icon('asna', 'partners__logo partners__logo--size-140')
+					li.partners__item
+						+icon('beru', 'partners__logo partners__logo--size-140')
+					li.partners__item.partners__item--color-grey
+						+icon('kupivip', 'partners__logo')
+					li.partners__item.partners__item--color-grey.partners__item--position-above
+						+icon('wildberries', 'partners__logo')
+					li.partners__item
+						+icon('lamoda', 'partners__logo')
+					li.partners__item.partners__item--color-grey
+						+icon('auchan', 'partners__logo partners__logo--size-140')
+					li.partners__item.partners__item--position-above
+						+icon('aizel', 'partners__logo')
+	section.marketing
+		.container
+			.marketing__content
+				.marketing__left
+					h2.section__title Маркетинг
+					h3.section__subtitle применяем #[br]эффективный маркетинг
+					.marketing-features
+						ul.marketing-features__list
+							li.marketing-features__item SMM
+							li.marketing-features__item Контент-маркетинг
+							li.marketing-features__item Крауд-маркетинг
+							li.marketing-features__item Промо-маркетинг
+							li.marketing-features__item PR
+					a.btn.marketing__btn(href="#") Подробнее
+
+				.marketing__right
+					.marketing__pic
+						img.marketing__img(src="images/marketing.jpg", alt="marketing")
+	section.video
+		.container
+			.video__content
+				h2.section__title Видео
+				h3.section__subtitle Смотрите наши обзоры
+				.video__slider.slider-video
+					ul.slider-video__list
+						li.slider-video__item
+							.slider-video__slide
+								img.slider-video__img(src="images/video-01.jpg", alt="")
+								h3.slider-video__title Бьюти бокс "Максимальное увлажнение" уже в продаже на Wildberries.ru
+								a.btn.slider-video__btn(href="#") Смотреть #[br]на Youtube
+						li.slider-video__item
+							.slider-video__slide
+								img.slider-video__img(src="images/video-02.jpg", alt="")
+								h3.slider-video__title Обзор на Гиалуроновый крем для лица HaruHaru Hyaluronic Cream
+								a.btn.slider-video__btn(href="#") Смотреть #[br]на Youtube
+					.slider-video__arrows
+						button.slider-video__arrow.slider-video__arrow_prev
+						button.slider-video__arrow.slider-video__arrow_next
+	section.instagram
+		.container
+			.instagram__content
+				.instagram__left
+					h2.section__title Instagram
+					h3.section__subtitle Больше полезного #[br]контента в instagram
+					a.btn.instagram__btn(href="#") Перейти в #[br]instagram
+				.instagram__right
+					img.instagram__img(src="images/insta.png", alt="")
+	section.section-form
+		.container
+			.section-form__content
+				.section-form__left
+					h2.section__title Контакты
+					h3.section__subtitle Сделаем первый шаг #[br]к сотрудничеству
+					form.mainform#mainform
+						.mainform__row
+							input(class="mainform__input" type="tel" id="phone" placeholder="Телефон" name="phone" required)
+							label(class="mainform__label" for="phone") Телефон
+						.mainform__row
+							input(class="mainform__input" type="text" id="contface" placeholder="Контактное лицо" name="contface" required)
+							label(class="mainform__label" for="contface") Контактное лицо
+						.mainform__row
+							input(class="mainform__input" type="text" id="email" placeholder="Электронная почта" name="email" required)
+							label(class="mainform__label" for="email") Электронная почта
+						.mainform__row
+							input(class="mainform__input" type="text" id="company" placeholder="Компания" name="company" required)
+							label(class="mainform__label" for="company") Компания
+						.mainform__row.mainform__row_flex
+							button.btn.mainform__btn(class="mainform__button" type="submit") Отправить
+							span.mainform__disclaimer Нажимая кнопку, вы соглашаетесь #[br]с политикой конфиденциальности
+				.section-form__right
+					.section-form__contacts
+						.section-form__row
+							a(href="#").section-form__title.section-form__title_size-xl +7 (499) 409-21-80
+							a(href="#").section-form__subtitle info@beforce.ru
+						.section-form__row
+							span.section-form__subtitle Москва, ул. Павловская, д. 27, стр. 4
+						.section-form__row
+							span.section-form__title Офис
+							span.section-form__subtitle Пн - Пт 10:00 - 18:00
+						.section-form__row
+							span.section-form__title Склад
+							span.section-form__subtitle Пн - Пт 10:00 - 20:00
+
+
+

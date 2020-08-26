@@ -1,0 +1,45 @@
+.section-form {
+	padding: 50px 0 200px 0;
+
+	&__content {
+		display: flex;
+		align-items: center;
+		padding-top: 50px;
+		border-top: 1px solid $white;
+	}
+
+	&__left {
+		width: 50%;
+	}
+
+	&__right {
+		display: flex;
+		justify-content: center;
+		width: 50%;
+	}
+
+	&__row {
+		margin-bottom: 25px;
+	}
+
+	&__row_flex {
+		display: flex;
+	}
+
+	&__title {
+		display: block;
+		margin-bottom: 8px;
+		color: #8f8c9e;
+	}
+
+	&__title_size-xl {
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 31px;
+		color: $white;
+	}
+
+	&__subtitle {
+		display: block;
+	}
+}

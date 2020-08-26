@@ -1,0 +1,32 @@
+.about {
+	padding: 50px 0 0 0;
+
+	&__content {
+		padding-top: 50px;
+		border-top: 1px solid $white;
+	}
+
+	&__wrapper {
+		display: flex;
+	}
+
+	&__left {
+		flex-basis: 50%;
+		width: 50%;
+	}
+
+	&__btn {
+		margin: 50px auto 0 auto;
+	}
+
+	&__right {
+		flex-basis: 50%;
+		width: 50%;
+	}
+
+	&__right-desc {
+		margin-bottom: 50px;
+		font-size: 16px;
+		line-height: 150%;
+	}
+}

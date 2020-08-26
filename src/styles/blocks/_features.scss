@@ -1,0 +1,35 @@
+.features {
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		position: relative;
+		flex-basis: 50%;
+		width: 50%;
+		margin-bottom: 50px;
+
+		&:nth-child(3),
+		&:nth-child(4) {
+			margin-bottom: 0;
+		}
+	}
+
+	&__item-title {
+		position: relative;
+		margin-bottom: 15px;
+		font-size: 50px;
+		line-height: 64px;
+
+		&::after {
+			position: absolute;
+			bottom: -5px;
+			left: 0;
+			width: 75%;
+			height: 1px;
+			content: '';
+			background-color: $white;
+		}
+	}
+}

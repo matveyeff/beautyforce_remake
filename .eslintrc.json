@@ -1,0 +1,21 @@
+{
+  "overrides": [
+    {
+      "rules": {
+        "func-names": ["error", "never"],
+        "indent": ["error", "tab"],
+        "no-tabs": ["error", {"allowIndentationTabs": true}]
+      },
+      "files": [
+        "src/**/*.js"
+      ],
+      "extends": [
+        "standard",
+        "airbnb-base"
+      ]
+    }
+  ],
+  "env": {
+    "jquery": true
+  }
+}

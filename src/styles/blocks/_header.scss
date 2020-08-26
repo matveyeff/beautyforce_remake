@@ -1,0 +1,16 @@
+.header {
+	height: 90px;
+	background-color: $main;
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 100%;
+	}
+
+	&__logo-icon {
+		max-width: 160px;
+		max-height: 30px;
+	}
+}

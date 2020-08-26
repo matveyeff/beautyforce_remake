@@ -1,0 +1,14 @@
+@mixin font-face($font-name, $path, $weight: normal, $style: normal) {
+	@font-face {
+		font-family: quote($font-name);
+		font-style: $style;
+		font-weight: $weight;
+		font-display: swap;
+		src:
+			url(#{$path}.woff2) format("woff2"),
+			url(#{$path}.woff) format("woff"),
+			url(#{$path}.ttf) format("truetype");
+	}
+}
+@include font-face('Futura PT', '../fonts/futura_pt/FuturaPT-Light', 100, 'normal');
+@include font-face('Futura PT', '../fonts/futura_pt/FuturaPT-Book', 200, 'normal');

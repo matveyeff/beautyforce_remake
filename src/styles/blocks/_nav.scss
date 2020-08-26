@@ -1,0 +1,14 @@
+.nav {
+	&__list {
+		display: flex;
+	}
+
+	&__item {
+		margin-right: 50px;
+		font-size: 14px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}

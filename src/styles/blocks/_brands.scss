@@ -1,0 +1,9 @@
+.brands {
+	padding: 100px 0;
+	overflow: hidden;
+
+	&__content {
+		padding-top: 50px;
+		border-top: 1px solid $main;
+	}
+}

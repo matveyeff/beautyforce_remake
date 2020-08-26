@@ -1,0 +1,29 @@
+.marketing {
+	&__content {
+		display: flex;
+	}
+
+	&__left {
+		flex-basis: 50%;
+		padding-top: 50px;
+		margin-top: 50px;
+		border-top: 1px solid $white;
+	}
+
+	&__right {
+		flex-basis: 50%;
+	}
+
+	&__pic {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__img {
+		max-width: 600px;
+	}
+
+	&__btn {
+		margin: 50px auto 0 auto;
+	}
+}

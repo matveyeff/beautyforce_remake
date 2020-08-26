@@ -1,0 +1,20 @@
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 150px;
+	height: 150px;
+	padding: 0 30px;
+	font-size: 12px;
+	color: $main;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	background-color: $white;
+	border-radius: 50%;
+
+	&_color-dark {
+		color: $white;
+		background-color: $main;
+	}
+}

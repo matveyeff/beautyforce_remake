@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	position: relative;
+	min-height: 100%;
+	font-size: 16px;
+	scroll-behavior: smooth;
+	@include tablets {
+		font-size: 14px;
+	}
+	@include phones {
+		font-size: 13px;
+	}
+}
+
+body {
+	position: relative;
+	min-width: 320px;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+	font-family: 'Futura PT', Helvetica, sans-serif;
+	color: $white;
+}
+
+svg {
+	width: inherit;
+	height: inherit;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+ul,
+li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+ol {
+	list-style-position: inside;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 0;
+	font-size: inherit;
+	font-weight: normal;
+}
+
+section {
+	overflow: hidden;
+	background-color: $main;
+}
+
+.section_color-white {
+	background-color: $white;
+}
+
+.section__title {
+	margin-bottom: 25px;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+
+	&_color-dark {
+		color: $main;
+	}
+
+	&_excellence {
+		position: absolute;
+		bottom: -55px;
+		left: 0;
+		margin-bottom: 0;
+	}
+}
+
+.section__subtitle {
+	font-size: 50px;
+	line-height: 64px;
+	text-transform: uppercase;
+
+	&_color-dark {
+		color: $main;
+	}
+}
+
+.wrapper {
+	position: relative;
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.container {
+	max-width: 1366px;
+	padding: 0 20px;
+	margin: 0 auto;
+}

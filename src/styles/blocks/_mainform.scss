@@ -1,0 +1,80 @@
+.mainform {
+	margin-top: 50px;
+
+	&__row {
+		position: relative;
+		padding: 35px 0 0;
+		margin: 25px 0;
+
+		&_flex {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+		}
+	}
+
+	&__label {
+		position: absolute;
+		top: 0;
+		display: block;
+		font-size: 14px;
+		color: $white;
+		transition: 0.2s;
+	}
+
+	&__input {
+		display: block;
+		width: 100%;
+		padding: 7px 0;
+		margin-bottom: 25px;
+		color: $white;
+		background: transparent;
+		border: 0;
+		border-bottom: 1px solid $white;
+		outline: none;
+
+		&:required,
+		&:invalid {
+			box-shadow: none;
+		}
+
+		&::placeholder {
+			color: transparent;
+		}
+
+		&:placeholder-shown ~ .mainform__label {
+			top: 25px;
+			font-size: 16px;
+			cursor: text;
+		}
+	}
+
+	&__btn {
+		margin-right: 50px;
+		cursor: pointer;
+		border: 0;
+		outline: none;
+	}
+
+	&__disclaimer {
+		font-size: 14px;
+		line-height: 18px;
+		color: #8f8c9e;
+	}
+}
+
+.mainform__input:focus {
+	~ .mainform__label {
+		position: absolute;
+		top: 0;
+		display: block;
+		font-size: 14px;
+		color: $white;
+		transition: all .15s ease;
+	}
+
+	padding-bottom: 6px;
+	font-weight: 700;
+	border-width: 2px;
+	border-image-slice: 1;
+}

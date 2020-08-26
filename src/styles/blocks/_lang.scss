@@ -1,0 +1,28 @@
+.dropdown {
+	position: relative;
+	text-transform: uppercase;
+
+	&__label {
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+
+		&::after {
+			width: 7px;
+			height: 4px;
+			margin-left: 5px;
+			content: '';
+			background: url('../../images/arrow-down.svg') no-repeat;
+		}
+	}
+
+	&__options {
+		position: absolute;
+		top: 100%;
+		display: none;
+	}
+}
+
+.dropdown.is-open .dropdown__options {
+	display: block;
+}

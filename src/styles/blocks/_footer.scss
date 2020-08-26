@@ -1,0 +1,55 @@
+.footer {
+	padding: 50px 0 0 0;
+
+	&__row {
+		display: flex;
+		margin-bottom: 50px;
+	}
+
+	&__text {
+		color: $purple;
+	}
+
+	&__column {
+		flex-basis: 25%;
+		width: 25%;
+	}
+
+	&__column-title {
+		margin-bottom: 15px;
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 31px;
+		color: #b4b2bb;
+		text-transform: uppercase;
+	}
+
+	&__column-item {
+		font-size: 16px;
+		line-height: 150%;
+		color: #1f1a3d;
+	}
+
+	&__logo {
+		margin-bottom: 25px;
+	}
+
+	&__logo-icon {
+		max-width: 160px;
+		max-height: 30px;
+		fill: $purple;
+	}
+
+	&__line {
+		display: flex;
+		justify-content: space-between;
+		padding: 25px 0;
+		border-top: 1px solid #e9e8ec;
+	}
+
+	&__copy {
+		font-size: 14px;
+		line-height: 18px;
+		color: #8f8c9e;
+	}
+}
