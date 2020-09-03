@@ -28,6 +28,10 @@
 		font-size: 16px;
 		line-height: 150%;
 		color: #1f1a3d;
+
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 
 	&__logo {

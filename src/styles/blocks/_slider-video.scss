@@ -7,11 +7,13 @@
 
 	&__item {
 		flex-basis: 50%;
+		margin-right: 50px;
 		background: linear-gradient(180deg, rgba(31, 26, 61, 0) 0%, #1f1a3d 100%);
 	}
 
 	&__slide {
 		position: relative;
+		display: block;
 		max-width: 600px;
 
 		&::after {
@@ -50,7 +52,7 @@
 	&__arrows {
 		position: absolute;
 		right: 0;
-		bottom: -100px;
+		bottom: -130px;
 	}
 
 	&__arrow {

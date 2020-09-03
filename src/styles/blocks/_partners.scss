@@ -1,28 +1,43 @@
 .partners {
-	padding: 150px 0;
+	padding: 200px 0;
 
 	&__content {
 		padding: 50px 0;
 		border-top: 1px solid $white;
 	}
 
+	&__grid {
+		position: relative;
+		margin-top: 75px;
+	}
+
+	&__grid-link {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		z-index: 99;
+		padding: 0;
+		color: $white;
+		background-color: $main;
+		border: 1px solid $white;
+		transform: translate(-50%, -50%);
+	}
+
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
-		margin-top: 50px;
+		justify-content: center;
 	}
 
 	&__item {
 		display: flex;
-		flex: 1 0 auto;
-		flex-basis: 25%;
 		align-items: center;
 		justify-content: center;
-		width: 338px;
-		height: 338px;
+		width: 320px;
+		height: 320px;
 		background-color: $white;
 		border-radius: 50%;
-		transform: scale(1.05);
+		transform: scale(1.09);
 	}
 
 	&__item--color-grey {
@@ -34,10 +49,10 @@
 	}
 
 	&__logo {
-		width: 200px;
+		width: 180px;
 	}
 
 	&__logo--size-140 {
-		max-width: 140px;
+		max-width: 135px;
 	}
 }
