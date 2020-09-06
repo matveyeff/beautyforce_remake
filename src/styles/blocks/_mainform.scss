@@ -11,6 +11,10 @@
 			align-items: center;
 			justify-content: flex-end;
 		}
+
+		&_reverse {
+			flex-direction: row-reverse;
+		}
 	}
 
 	&__label {
@@ -52,14 +56,22 @@
 	&__btn {
 		margin-right: 50px;
 		cursor: pointer;
-		border: 0;
+		border: none;
 		outline: none;
+	}
+
+	&__btn_reverse {
+		margin-right: 0;
 	}
 
 	&__disclaimer {
 		font-size: 14px;
 		line-height: 18px;
 		color: #8f8c9e;
+	}
+
+	&__disclaimer_reverse {
+		margin-right: 50px;
 	}
 }
 

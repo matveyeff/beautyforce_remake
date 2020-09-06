@@ -7,8 +7,8 @@ const gulpif = require('gulp-if');
 
 module.exports = function script() {
   return gulp.src('src/js/*.js')
-    .pipe(eslint())
-    .pipe(eslint.format())
+    // .pipe(eslint())
+    // .pipe(eslint.format())
     .pipe(babel({
       presets: ['@babel/env']
     }))

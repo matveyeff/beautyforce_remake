@@ -1,0 +1,49 @@
+.branches {
+	padding: 100px 0;
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item {
+		position: relative;
+		flex-basis: 25%;
+		padding-top: 50px;
+
+		&:first-child {
+			flex-basis: 50%;
+		}
+
+		&::after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 90%;
+			height: 1px;
+			content: '';
+			background-color: $white;
+		}
+	}
+
+	&__title {
+		margin-bottom: 25px;
+		font-size: 50px;
+		line-height: 64px;
+		text-transform: uppercase;
+	}
+
+	&__phone {
+		display: block;
+		margin-bottom: 15px;
+		font-size: 24px;
+		line-height: 31px;
+	}
+
+	&__address,
+	&__email {
+		display: block;
+		font-size: 16px;
+		line-height: 150%;
+	}
+}

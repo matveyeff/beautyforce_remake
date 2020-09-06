@@ -10,8 +10,11 @@
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
+	cursor: pointer;
 	background-color: $white;
+	border: none;
 	border-radius: 50%;
+	outline: none;
 
 	&_color-dark {
 		color: $white;

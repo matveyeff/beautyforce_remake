@@ -1,6 +1,10 @@
 .footer {
 	padding: 50px 0 0 0;
 
+	&_color-dark {
+		background-color: $main;
+	}
+
 	&__row {
 		display: flex;
 		margin-bottom: 50px;
@@ -27,11 +31,18 @@
 	&__column-item {
 		font-size: 16px;
 		line-height: 150%;
-		color: #1f1a3d;
 
 		&:hover {
 			text-decoration: underline;
 		}
+	}
+
+	&__column-link {
+		color: #1f1a3d;
+	}
+
+	&__column-link_color-white {
+		color: $white;
 	}
 
 	&__logo {

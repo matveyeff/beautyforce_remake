@@ -1,0 +1,40 @@
+.departments {
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		position: relative;
+		flex-basis: 25%;
+		padding-top: 25px;
+		margin-bottom: 50px;
+
+		&::before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: block;
+			width: 90%;
+			height: 1px;
+			content: '';
+			background-color: $white;
+		}
+	}
+
+	&__subtitle {
+		display: block;
+		margin-bottom: 10px;
+		font-size: 14px;
+		line-height: 18px;
+		color: #8f8c9e;
+		text-transform: uppercase;
+	}
+
+	&__title {
+		margin-bottom: 25px;
+		font-size: 24px;
+		line-height: 31px;
+		color: $white;
+	}
+}

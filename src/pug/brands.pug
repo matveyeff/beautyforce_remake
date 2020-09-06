@@ -1,0 +1,206 @@
+extends layout/page
+
+block variables
+	-var title = 'Бренды'
+
+block content
+	.page-brands
+		.page-brands__hero
+			.container.page-brands__container
+				h1.page-brands__title Бренды
+				ul.page-brands__list
+					li.page-brands__item: a.page-brands__link(href="#decorations") Украшения
+					li.page-brands__item: a.page-brands__link(href="#haircare") Уход за волосами
+					li.page-brands__item: a.page-brands__link(href="#skincare") Уход за кожей
+					li.page-brands__item: a.page-brands__link(href="#hygiene") Гигиена
+					li.page-brands__item: a.page-brands__link(href="#decorative") Декоративная косметика
+					li.page-brands__item: a.page-brands__link(href="#household") Бытовая химия
+					li.page-brands__item: a.page-brands__link(href="#food") Продукты питания
+		.page-brands__content
+			.container
+				ul.page-brands__list
+					li.page-brands__category#decorations
+						h2.page-brands__category-title Украшения
+						.brand-category
+							ul.brand-category__list
+								li.brand-category__item
+									a(href="#").brand-category__link
+										.icon-swarovski
+										img(src="images/swarovski.jpg", alt="").brand-category__img
+					li.page-brands__category#haircare
+						h2.page-brands__category-title Уход за волосами
+						.brand-category
+							ul.brand-category__list
+								li.brand-category__item
+									a(href="#").brand-category__link
+										.brand-category__icon
+											.icon-londa
+										img(src="images/londa.jpg", alt="").brand-category__img
+								li.brand-category__item
+									a(href="#").brand-category__link
+										.brand-category__icon
+											.icon-wella
+										img(src="images/wella.jpg", alt="").brand-category__img
+								li.brand-category__item
+									a(href="#").brand-category__link
+										.brand-category__icon
+											.icon-nioxin
+										img(src="images/nioxin.jpg", alt="").brand-category__img
+								li.brand-category__item
+									a(href="#").brand-category__link
+										.brand-category__icon
+											.icon-sebastian
+										img(src="images/sebastian.jpg", alt="").brand-category__img
+								li.brand-category__item
+									a(href="#").brand-category__link
+										.brand-category__icon
+											.icon-sebman
+										img(src="images/sebman.jpg", alt="").brand-category__img
+								li.brand-category__item
+									a(href="#").brand-category__link
+										.brand-category__icon
+											.icon-ghd
+										img(src="images/ghd.jpg", alt="").brand-category__img
+					li.page-brands__category#skincare
+						h2.page-brands__category-title Уход за кожей
+						.brand-category
+							ul.brand-category__list
+								li.brand-category__item
+									a(href="#").brand-category__link
+										.brand-category__icon
+											.icon-dr-gloderm
+										img(src="images/dr-gloderm.jpg", alt="").brand-category__img
+								li.brand-category__item
+									a(href="#").brand-category__link
+										.brand-category__icon
+											.icon-cellmiin
+										img(src="images/cellmiin.jpg", alt="").brand-category__img
+								li.brand-category__item
+									a(href="#").brand-category__link
+										.brand-category__icon
+											.icon-haruharu
+										img(src="images/haruharu.jpg", alt="").brand-category__img
+								li.brand-category__item
+									a(href="#").brand-category__link
+										.brand-category__icon
+											.icon-foreverskin
+										img(src="images/foreverskin.jpg", alt="").brand-category__img
+								li.brand-category__item
+									a(href="#").brand-category__link
+										.brand-category__icon
+											.icon-koelf
+										img(src="images/koelf.jpg", alt="").brand-category__img
+								li.brand-category__item
+									a(href="#").brand-category__link
+										.brand-category__icon
+											.icon-skin-house
+										img(src="images/skin-house.jpg", alt="").brand-category__img
+								li.brand-category__item
+									a(href="#").brand-category__link
+										.brand-category__icon
+											.icon-l-sanic
+										img(src="images/l-sanic.jpg", alt="").brand-category__img
+								li.brand-category__item
+									a(href="#").brand-category__link
+										.brand-category__icon
+											.icon-petitfee
+										img(src="images/petitfee.jpg", alt="").brand-category__img
+								li.brand-category__item
+									a(href="#").brand-category__link
+										.brand-category__icon
+											.icon-dearboo
+										img(src="images/dearboo.jpg", alt="").brand-category__img
+								li.brand-category__item
+									a(href="#").brand-category__link
+										.brand-category__icon
+											.icon-oattbe
+										img(src="images/oattbe.jpg", alt="").brand-category__img
+								li.brand-category__item
+									a(href="#").brand-category__link
+										.brand-category__icon
+											.icon-cure
+										img(src="images/cure.jpg", alt="").brand-category__img
+								li.brand-category__item
+									a(href="#").brand-category__link
+										.brand-category__icon
+											.icon-xilix
+										img(src="images/xilix.jpg", alt="").brand-category__img
+					li.page-brands__category#hygiene
+						h2.page-brands__category-title Гигиена
+						.brand-category
+							ul.brand-category__list
+								li.brand-category__item
+									a(href="#").brand-category__link
+										.brand-category__icon
+											.icon-yejimiin
+										img(src="images/yejimiin.jpg", alt="").brand-category__img
+								li.brand-category__item
+									a(href="#").brand-category__link
+										.brand-category__icon
+											.icon-elis
+										img(src="images/elis.jpg", alt="").brand-category__img
+								li.brand-category__item
+									a(href="#").brand-category__link
+										.brand-category__icon
+											.icon-alsoft
+										img(src="images/alsoft.jpg", alt="").brand-category__img
+								li.brand-category__item
+									a(href="#").brand-category__link
+										.brand-category__icon
+											.icon-shavo-green
+										img(src="images/shavo-green.jpg", alt="").brand-category__img
+					li.page-brands__category#decorative
+						h2.page-brands__category-title Декоративная косметика
+						.brand-category
+							ul.brand-category__list
+								li.brand-category__item
+									a(href="#").brand-category__link
+										.brand-category__icon
+											.icon-1-foundation
+										img(src="images/1-foundation.jpg", alt="").brand-category__img
+								li.brand-category__item
+									a(href="#").brand-category__link
+										.brand-category__icon
+											.icon-opi
+										img(src="images/opi.jpg", alt="").brand-category__img
+					li.page-brands__category#household
+						h2.page-brands__category-title Бытовая химия
+						.brand-category
+							ul.brand-category__list
+								li.brand-category__item
+									a(href="#").brand-category__link
+										.brand-category__icon
+											.icon-saraya
+										img(src="images/saraya.jpg", alt="").brand-category__img
+								li.brand-category__item
+									a(href="#").brand-category__link
+										.brand-category__icon
+											.icon-arau
+										img(src="images/arau.jpg", alt="").brand-category__img
+								li.brand-category__item
+									a(href="#").brand-category__link
+										.brand-category__icon
+											.icon-happy-elephant
+										img(src="images/happy-elephant.jpg", alt="").brand-category__img
+								li.brand-category__item
+									a(href="#").brand-category__link
+										.brand-category__icon
+											.icon-yashinomi
+										img(src="images/yashinomi.jpg", alt="").brand-category__img
+								li.brand-category__item
+									a(href="#").brand-category__link
+										.brand-category__icon
+											.icon-smile-helper
+										img(src="images/smile-helper.jpg", alt="").brand-category__img
+					li.page-brands__category#food
+						h2.page-brands__category-title Продукты питания
+						.brand-category
+							ul.brand-category__list
+								li.brand-category__item
+									a(href="#").brand-category__link
+										.brand-category__icon
+											.icon-lakanto
+										img(src="images/lakanto.jpg", alt="").brand-category__img
+				.page-brands__more
+					h3.page-brands__more-title Смотрите все товары в каталоге
+					a.btn.page-brands__more-link(href="#") Открыть каталог

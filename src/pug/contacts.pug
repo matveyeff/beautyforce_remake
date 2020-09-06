@@ -1,0 +1,80 @@
+extends layout/main
+
+block variables
+	-var title = 'Контакты |'
+
+block content
+	.page-contacts
+		.container
+			.branches
+				ul.branches__list
+					li.branches__item
+						h2.branches__title Москва
+						a.branches__phone(href="tel:84994092180") +7 (499) 409-21-80
+						span.branches__address ул. Павловская, д. 27, стр. 4
+						a.branches__email(href="mailto:info@beforce.ru") info@beforce.ru
+					li.branches__item
+						h2.branches__title Милан
+						a.branches__phone(href="tel:390230462659") +39 0230462659 add 2659
+						span.branches__address Milan Bicocca, Via Libero Temolo 4, 4th floor
+					li.branches__item
+						h2.branches__title Сеул
+						a.branches__phone(href="tel:07046805682") 070-4680-5682
+						span.branches__address 4F,21, Bongeunsa-ro 108-gil, Gangnam-gu
+			.departments
+				ul.departments__list
+					li.departments__item
+						span.departments__subtitle Отдел
+						h3.departments__title Коммерция
+						a.departments__link(href="mailto:info@beforce.ru") info@beforce.ru
+					li.departments__item
+						span.departments__subtitle Отдел
+						h3.departments__title Маркетинг
+						a.departments__link(href="mailto:marketing@beforce.ru") marketing@beforce.ru
+					li.departments__item
+						span.departments__subtitle Отдел
+						h3.departments__title Дизайн
+						a.departments__link(href="mailto:design@beforce.ru") design@beforce.ru
+					li.departments__item
+						span.departments__subtitle Отдел
+						h3.departments__title Юридический
+						a.departments__link(href="mailto:legal@beforce.ru") legal@beforce.ru
+					li.departments__item
+						span.departments__subtitle Отдел
+						h3.departments__title IT
+						a.departments__link(href="mailto:it@beforce.ru") it@beforce.ru
+					li.departments__item
+						span.departments__subtitle Отдел
+						h3.departments__title Финансы
+						a.departments__link(href="mailto:fin@beforce.ru") fin@beforce.ru
+					li.departments__item
+						span.departments__subtitle Отдел
+						h3.departments__title Логистика
+						a.departments__link(href="mailto:logistics@beforce.ru") logistics@beforce.ru
+					li.departments__item
+						span.departments__subtitle Отдел
+						h3.departments__title Склад
+						a.departments__link(href="mailto:stock@beforce.ru") stock@beforce.ru
+		.map#map
+		section.section-form
+			.container
+				.section-form__content
+					.section-form__left
+						h2.section__title Контакты
+						h3.section__subtitle Сделаем первый шаг #[br]к сотрудничеству
+						form.mainform#mainform
+							.mainform__row
+								input(class="mainform__input" type="tel" id="phone" placeholder="Телефон" name="phone" required)
+								label(class="mainform__label" for="phone") Телефон
+							.mainform__row
+								input(class="mainform__input" type="text" id="contface" placeholder="Контактное лицо" name="contface" required)
+								label(class="mainform__label" for="contface") Контактное лицо
+							.mainform__row
+								input(class="mainform__input" type="text" id="email" placeholder="Электронная почта" name="email" required)
+								label(class="mainform__label" for="email") Электронная почта
+							.mainform__row
+								input(class="mainform__input" type="text" id="company" placeholder="Компания" name="company" required)
+								label(class="mainform__label" for="company") Компания
+							.mainform__row.mainform__row_flex.mainform__row_reverse
+								button.btn.mainform__btnmainform__btn_reverse(class="mainform__button" type="submit") Отправить
+								span.mainform__disclaimer.mainform__disclaimer_reverse Нажимая кнопку, вы соглашаетесь #[br]с политикой конфиденциальности
