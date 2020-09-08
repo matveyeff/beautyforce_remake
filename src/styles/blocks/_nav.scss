@@ -30,4 +30,20 @@
 			}
 		}
 	}
+
+	&__link_background {
+		padding: 5px 10px;
+		line-height: 0;
+		color: $main;
+		background-color: rgba($white, .95);
+		border-radius: 3px;
+
+		&:hover {
+			background-color: rgba($white, 1);
+
+			&::after {
+				display: none;
+			}
+		}
+	}
 }

@@ -2,7 +2,7 @@
 	&__hero {
 		display: flex;
 		align-items: center;
-		min-height: 710px;
+		min-height: 610px;
 		background-color: $main;
 	}
 
@@ -12,6 +12,7 @@
 
 	&__title {
 		flex-basis: 50%;
+		margin-bottom: 0;
 		font-size: 110px;
 		font-weight: 100;
 		text-transform: uppercase;
@@ -21,7 +22,6 @@
 		display: flex;
 		flex-basis: 50%;
 		flex-wrap: wrap;
-		margin-bottom: 200px;
 	}
 
 	&__item {
@@ -78,7 +78,7 @@
 	}
 
 	&__more {
-		padding: 50px 0 100px 0;
+		padding: 50px 0 150px 0;
 		border-top: 1px solid $main;
 	}
 
