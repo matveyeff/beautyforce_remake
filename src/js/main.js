@@ -10,13 +10,13 @@ langSwitcher.addEventListener('click', (e) => {
 });
 
 function initMap() {
-	const moscow = { lat: 55.68546, lng: 37.5679276 };
+	const moscow = { lat: 55.712632, lng: 37.628248 };
 	const google = window.google;
 	const map = new google.maps.Map(document.getElementById('map'), {
 		zoom: 12,
 		center: { lat: 55.7005654, lng: 37.6214963 },
-		disableDefaultUI: true,
-		zoomControl: false,
+		disableDefaultUI: false,
+		zoomControl: true,
 		scrollwheel: false,
 		styles: [
 			{
@@ -78,7 +78,7 @@ function initMap() {
 				elementType: 'labels.icon',
 				stylers: [
 					{
-						visibility: 'off',
+						visibility: 'on',
 					},
 				],
 			},

@@ -12,8 +12,8 @@ langSwitcher.addEventListener('click', function (e) {
 
 function initMap() {
   var moscow = {
-    lat: 55.68546,
-    lng: 37.5679276
+    lat: 55.712632,
+    lng: 37.628248
   };
   var google = window.google;
   var map = new google.maps.Map(document.getElementById('map'), {
@@ -22,8 +22,8 @@ function initMap() {
       lat: 55.7005654,
       lng: 37.6214963
     },
-    disableDefaultUI: true,
-    zoomControl: false,
+    disableDefaultUI: false,
+    zoomControl: true,
     scrollwheel: false,
     styles: [{
       featureType: 'administrative.locality',
@@ -65,7 +65,7 @@ function initMap() {
       featureType: 'road.arterial',
       elementType: 'labels.icon',
       stylers: [{
-        visibility: 'off'
+        visibility: 'on'
       }]
     }, {
       featureType: 'transit',
