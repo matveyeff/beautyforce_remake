@@ -15,9 +15,22 @@
 	border: none;
 	border-radius: 50%;
 	outline: none;
+	transition: all .25s ease;
+
+	&:hover {
+		color: $white;
+		background-color: transparent;
+		border: 1px solid $white;
+	}
 
 	&_color-dark {
 		color: $white;
 		background-color: $main;
+
+		&:hover {
+			color: $main;
+			background-color: $white;
+			border: 1px solid $main;
+		}
 	}
 }

@@ -1,14 +1,28 @@
 .slider-excellence {
 	position: relative;
 
+	&__list {
+		position: relative;
+		display: flex;
+		outline: none;
+	}
+
 	&__item {
 		position: relative;
+		flex-basis: 100%;
+		width: 100%;
+		border: none;
+		outline: none;
 	}
 
 	&__text {
-		position: absolute;
-		right: 110px;
-		bottom: -218px;
+		display: flex;
+		justify-content: flex-end;
+		width: 100%;
+		transform: translateY(-65px) translateX(-120px);
+	}
+
+	&__text-container {
 		max-width: 550px;
 	}
 
@@ -27,8 +41,8 @@
 
 	&__btns {
 		position: absolute;
-		right: 540px;
-		bottom: -235px;
+		right: 550px;
+		bottom: 40px;
 	}
 
 	&__btn {

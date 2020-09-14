@@ -1,5 +1,5 @@
 .partners {
-	padding: 200px 0;
+	padding: 100px 0;
 
 	&__content {
 		padding: 50px 0;
@@ -21,6 +21,12 @@
 		background-color: $main;
 		border: 1px solid $white;
 		transform: translate(-50%, -50%);
+
+		&:hover {
+			color: $main;
+			background-color: $white;
+			border: 1px solid $main;
+		}
 	}
 
 	&__list {

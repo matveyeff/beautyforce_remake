@@ -49,13 +49,30 @@ block content
 					li.slider-excellence__item
 						img(src="images/slide-01.jpg", alt="").slider-excellence__img
 						.slider-excellence__text
-							h3.slider-excellence__title Эксклюзивные бренды из Кореи
-							.slider-excellence__desc
-								p Мы ценим качество и инновационные технологии в производстве, именно поэтому выбираем лучшие косметические бренды из Южной Кореи. Их эффективность доказана многочисленным клиническими исследованиями.
-							span.slider-excellence__number 01 — 03
+							.slider-excellence__text-container
+								h3.slider-excellence__title Эксклюзивные бренды из Кореи
+								.slider-excellence__desc
+									p Мы ценим качество и инновационные технологии в производстве, именно поэтому выбираем лучшие косметические бренды из Южной Кореи. Их эффективность доказана многочисленным клиническими исследованиями.
+								span.slider-excellence__number 01 — 03
+					li.slider-excellence__item
+						img(src="images/slide-02.jpg", alt="").slider-excellence__img
+						.slider-excellence__text
+							.slider-excellence__text-container
+								h3.slider-excellence__title Прямой импорт #[br]в страну продажи
+								.slider-excellence__desc
+									p Все импортируемые продукты перевозятся согласно законодательству, проходят сертификацию и маркировку. Благодаря собственной логистике, каждое средство бережно упаковывается и доставляется с соблюдением всех норм.
+								span.slider-excellence__number 02 — 03
+					li.slider-excellence__item
+						img(src="images/slide-03.jpg", alt="").slider-excellence__img
+						.slider-excellence__text
+							.slider-excellence__text-container
+								h3.slider-excellence__title Cильное #[br]бренд-портфолио
+								.slider-excellence__desc
+									p В нашем портфолио популярные бренды из Европы, США и Южной Кореи. Все марки отвечают основным критериям: запатентованные ингредиенты и экологичное производство.
+								span.slider-excellence__number 03 — 03
 				.slider-excellence__btns
-					button.slider-excellence__btn.slider-excellence__btn_prev
-					button.slider-excellence__btn.slider-excellence__btn_next
+					//- button.slider-excellence__btn.slider-excellence__btn_prev
+					//- button.slider-excellence__btn.slider-excellence__btn_next
 	section.section_color-white.brands
 		.container
 			.brands__content
@@ -159,9 +176,14 @@ block content
 								img.slider-video__img(src="images/video-02.jpg", alt="")
 								h3.slider-video__title Обзор на Гиалуроновый крем для лица HaruHaru Hyaluronic Cream
 								.btn.slider-video__btn Смотреть #[br]на Youtube
+						li.slider-video__item
+							a.slider-video__slide(href="#")
+								img.slider-video__img(src="images/video-03.jpg", alt="")
+								h3.slider-video__title Обзор линейки уходовых средств Cellmiin Feel-A-Green
+								.btn.slider-video__btn Смотреть #[br]на Youtube
 					.slider-video__arrows
-						button.slider-video__arrow.slider-video__arrow_prev
-						button.slider-video__arrow.slider-video__arrow_next
+						//- button.slider-video__arrow.slider-video__arrow_prev
+						//- button.slider-video__arrow.slider-video__arrow_next
 	section.instagram
 		.container
 			.instagram__content
@@ -180,16 +202,16 @@ block content
 					form.mainform#mainform
 						.mainform__row
 							input(class="mainform__input" type="tel" id="phone" placeholder="Телефон" name="phone" required)
-							label(class="mainform__label" for="phone") Телефон
+							label(class="mainform__label" for="phone") Телефон*
 						.mainform__row
 							input(class="mainform__input" type="text" id="contface" placeholder="Контактное лицо" name="contface" required)
-							label(class="mainform__label" for="contface") Контактное лицо
+							label(class="mainform__label" for="contface") Контактное лицо*
 						.mainform__row
 							input(class="mainform__input" type="text" id="email" placeholder="Электронная почта" name="email" required)
-							label(class="mainform__label" for="email") Электронная почта
+							label(class="mainform__label" for="email") Электронная почта*
 						.mainform__row
 							input(class="mainform__input" type="text" id="company" placeholder="Компания" name="company" required)
-							label(class="mainform__label" for="company") Компания
+							label(class="mainform__label" for="company") Компания*
 						.mainform__row.mainform__row_flex
 							button.btn.mainform__btn(class="mainform__button" type="submit") Отправить
 							span.mainform__disclaimer Нажимая кнопку, вы соглашаетесь #[br]с политикой конфиденциальности
