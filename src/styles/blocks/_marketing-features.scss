@@ -1,5 +1,5 @@
 .marketing-features {
-	margin-top: 50px;
+	margin-top: 75px;
 
 	&__list {
 		display: flex;
@@ -7,18 +7,36 @@
 	}
 
 	&__item {
-		flex-basis: 50%;
+		flex-basis: 33.333%;
 		margin-bottom: 25px;
+		margin-bottom: 75px;
+		text-align: left;
+
+		&:nth-child(4),
+		&:nth-child(5),
+		&:nth-child(6) {
+			margin-bottom: 0;
+		}
+	}
+
+	&__icon {
+		max-width: 70px;
+		max-height: 70px;
+		margin-bottom: 20px;
+	}
+
+	&__title {
+		margin-bottom: 15px;
 		font-size: 24px;
 		font-weight: 500;
 		line-height: 31px;
-		text-align: left;
 		text-transform: uppercase;
+	}
 
-		&::before {
-			margin-right: 5px;
-			content: '—';
-			opacity: 50%;
-		}
+	&__desc {
+		padding-right: 50px;
+		font-size: 16px;
+		line-height: 150%;
+		color: #b4b2bb;
 	}
 }

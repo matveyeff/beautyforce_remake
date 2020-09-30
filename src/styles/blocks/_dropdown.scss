@@ -13,16 +13,57 @@
 			margin-left: 5px;
 			content: '';
 			background: url('../images/arrow-down.svg') no-repeat;
+			transition: all .15s ease;
 		}
 	}
 
 	&__options {
 		position: absolute;
-		top: 100%;
+		top: 25px;
+		left: 50%;
+		z-index: 99;
 		display: none;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100px;
+		height: 90px;
+		color: $main;
+		text-align: center;
+		background-color: $white;
+		transform: translate(-50%, 0);
+
+		&::after {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			display: block;
+			width: 10px;
+			height: 5px;
+			content: '';
+			background: url('../images/triangle.svg') no-repeat;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	&__option {
+		width: 100%;
+		margin-bottom: 5px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__link {
+		display: block;
 	}
 }
 
 .dropdown.is-open .dropdown__options {
-	display: block;
+	display: flex;
+}
+
+.dropdown.is-open .dropdown__label::after {
+	transform: rotate(180deg);
 }

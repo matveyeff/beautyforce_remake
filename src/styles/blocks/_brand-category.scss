@@ -5,19 +5,19 @@
 	}
 
 	&__item {
+		position: relative;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		width: 320px;
 		height: 320px;
-		border: 1px solid #e9e8ec;
+		border: 1px solid #b4b2bb;
 		border-radius: 50%;
 		transition: all .1s ease-out;
 		transform: scale(1.09);
 
 		&:hover {
 			z-index: 99;
-			transform: scale(1.12);
 		}
 	}
 
@@ -51,12 +51,21 @@
 }
 
 .brand-category__link:hover {
-	.brand-category__icon {
-		display: none;
+	position: relative;
+	background-color: $main;
+
+	&::before {
+		top: 50%;
+		left: 50%;
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 31px;
+		text-align: center;
+		text-transform: uppercase;
+		content: 'Перейти в бренд';
 	}
 
-	.brand-category__img {
-		z-index: 99;
-		transform: translateX(0);
+	.brand-category__icon {
+		display: none;
 	}
 }

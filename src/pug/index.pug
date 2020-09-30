@@ -115,7 +115,7 @@ block content
 						.icon-sp
 					li.brands-grid__item
 						.icon-ghd
-			a(href="#").btn.btn_color-dark.brands-grid__btn Подробнее
+			a(href="#").btn.btn_color-dark.brands-grid__btn Смотреть все бренды
 	section.partners
 		.container
 			.partners__content
@@ -126,20 +126,20 @@ block content
 						li.partners__item
 							+icon('ozon', 'partners__logo partners__logo--size-140')
 						li.partners__item.partners__item--color-grey.partners__item--position-above
-							+icon('asna', 'partners__logo partners__logo--size-140')
-						li.partners__item
-							+icon('beru', 'partners__logo partners__logo--size-140')
-						li.partners__item.partners__item--color-grey
-							+icon('kupivip', 'partners__logo')
-					ul.partners__list
-						li.partners__item.partners__item--color-grey.partners__item--position-above
 							+icon('wildberries', 'partners__logo')
 						li.partners__item
+							+icon('yandex-market', 'partners__logo partners__logo--size-140')
+						li.partners__item.partners__item--color-grey
 							+icon('lamoda', 'partners__logo')
+					ul.partners__list
+						li.partners__item.partners__item--color-grey
+							+icon('kupivip', 'partners__logo')
+						li.partners__item
+							+icon('letu', 'partners__logo')
 						li.partners__item.partners__item--color-grey
 							+icon('auchan', 'partners__logo partners__logo--size-140')
 						li.partners__item.partners__item--position-above
-							+icon('aizel', 'partners__logo')
+							+icon('utkonos', 'partners__logo')
 					a.btn.partners__grid-link(href="#") Смотреть всех партнеров
 	section.marketing
 		.container
@@ -149,16 +149,39 @@ block content
 					h3.section__subtitle Digital-маркетинг
 					.marketing-features
 						ul.marketing-features__list
-							li.marketing-features__item SMM
-							li.marketing-features__item Контент-маркетинг
-							li.marketing-features__item Крауд-маркетинг
-							li.marketing-features__item Промо-маркетинг
-							li.marketing-features__item PR
-					a.btn.marketing__btn(href="#") Подробнее
+							li.marketing-features__item
+								+icon('marketing-icon-01', 'marketing-features__icon')
+								h3.marketing-features__title SMM
+								.marketing-features__desc
+									p Воздействие на потребителя поддерживает опрос. Имидж традиционно отражает рыночный портрет потребителя.
+							li.marketing-features__item
+								+icon('marketing-icon-02', 'marketing-features__icon')
+								h3.marketing-features__title Сайты
+								.marketing-features__desc
+									p Воздействие на потребителя поддерживает опрос. Имидж традиционно отражает рыночный портрет потребителя.
+							li.marketing-features__item
+								+icon('marketing-icon-03', 'marketing-features__icon')
+								h3.marketing-features__title PR
+								.marketing-features__desc
+									p Воздействие на потребителя поддерживает опрос. Имидж традиционно отражает рыночный портрет потребителя.
+							li.marketing-features__item
+								+icon('marketing-icon-04', 'marketing-features__icon')
+								h3.marketing-features__title Event
+								.marketing-features__desc
+									p Воздействие на потребителя поддерживает опрос. Имидж традиционно отражает рыночный портрет потребителя.
+							li.marketing-features__item
+								+icon('marketing-icon-05', 'marketing-features__icon')
+								h3.marketing-features__title Анализ
+								.marketing-features__desc
+									p Воздействие на потребителя поддерживает опрос. Имидж традиционно отражает рыночный портрет потребителя.
+							li.marketing-features__item
+								+icon('marketing-icon-06', 'marketing-features__icon')
+								h3.marketing-features__title SERM
+								.marketing-features__desc
+									p Воздействие на потребителя поддерживает опрос. Имидж традиционно отражает рыночный портрет потребителя.
 
 				.marketing__right
-					.marketing__pic
-						img.marketing__img(src="images/marketing.jpg", alt="marketing")
+					a.btn.marketing__btn(href="#") Подробнее
 	section.video
 		.container
 			.video__content
@@ -188,11 +211,18 @@ block content
 		.container
 			.instagram__content
 				.instagram__left
+					.instagram__pic
+						img.instagram__img(src="images/insta-01.jpg", alt="")
+					.instagram__pic
+						img.instagram__img(src="images/insta-02.jpg", alt="")
+					.instagram__pic
+						img.instagram__img(src="images/insta-03.jpg", alt="")
+					.instagram__pic
+						img.instagram__img(src="images/insta-04.jpg", alt="")
+				.instagram__right
 					h2.section__title Instagram
 					h3.section__subtitle Больше полезного #[br]контента в instagram
 					a.btn.instagram__btn(href="#") Перейти в #[br]instagram
-				.instagram__right
-					img.instagram__img(src="images/insta.png", alt="")
 	section.section-form
 		.container
 			.section-form__content
@@ -228,6 +258,3 @@ block content
 						.section-form__row
 							span.section-form__title Склад
 							span.section-form__subtitle Пн - Пт 10:00 - 20:00
-
-
-

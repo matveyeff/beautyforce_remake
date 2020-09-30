@@ -67,4 +67,10 @@
 		line-height: 18px;
 		color: #8f8c9e;
 	}
+
+	&__copy_link {
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }

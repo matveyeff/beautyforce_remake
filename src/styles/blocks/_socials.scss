@@ -33,5 +33,9 @@
 	&__icon {
 		max-width: 12px;
 		max-height: 12px;
+
+		path {
+			fill: aqua !important;
+		}
 	}
 }

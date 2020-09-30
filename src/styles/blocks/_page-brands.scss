@@ -8,6 +8,7 @@
 
 	&__container {
 		display: flex;
+		width: 100%;
 	}
 
 	&__title {
@@ -22,9 +23,16 @@
 		display: flex;
 		flex-basis: 50%;
 		flex-wrap: wrap;
+		margin-bottom: 200px;
 	}
 
-	&__item {
+	&__menu-list {
+		display: flex;
+		flex-basis: 50%;
+		flex-wrap: wrap;
+	}
+
+	&__menu-item {
 		flex-basis: 50%;
 		margin-bottom: 15px;
 		font-size: 18px;
@@ -32,7 +40,7 @@
 		text-transform: uppercase;
 	}
 
-	&__link {
+	&__menu-link {
 		position: relative;
 
 		&::after {
@@ -96,5 +104,11 @@
 		margin: 0 auto;
 		color: $white;
 		background-color: $main;
+
+		&:hover {
+			color: $main;
+			background-color: $white;
+			border: 1px solid $main;
+		}
 	}
 }

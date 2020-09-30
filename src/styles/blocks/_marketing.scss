@@ -1,19 +1,20 @@
 .marketing {
-	padding: 100px 0;
+	padding: 100px 0 0 0;
 
 	&__content {
 		display: flex;
-	}
-
-	&__left {
-		flex-basis: 50%;
-		padding-top: 50px;
-		margin-top: 50px;
 		border-top: 1px solid $white;
 	}
 
+	&__left {
+		flex-basis: 75%;
+		padding-top: 50px;
+	}
+
 	&__right {
-		flex-basis: 50%;
+		display: flex;
+		flex-basis: 25%;
+		align-items: flex-end;
 	}
 
 	&__pic {

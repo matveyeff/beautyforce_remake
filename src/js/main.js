@@ -13,7 +13,7 @@ function initMap() {
 	const moscow = { lat: 55.712632, lng: 37.628248 };
 	const google = window.google;
 	const map = new google.maps.Map(document.getElementById('map'), {
-		zoom: 13,
+		zoom: 3,
 		center: { lat: 55.7005654, lng: 37.6214963 },
 		disableDefaultUI: false,
 		zoomControl: true,
