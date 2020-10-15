@@ -12,6 +12,14 @@
 		flex-wrap: nowrap;
 	}
 
+	&__list_top {
+		transform: translateX(-30%);
+	}
+
+	&__list_bottom {
+		transform: translateX(30%);
+	}
+
 	&__item {
 		display: flex;
 		flex: 1 0 auto;

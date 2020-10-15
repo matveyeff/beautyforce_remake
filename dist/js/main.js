@@ -15,6 +15,14 @@ function initMap() {
     lat: 55.712632,
     lng: 37.628248
   };
+  var milan = {
+    lat: 45.511279,
+    lng: 9.2078201
+  };
+  var seoul = {
+    lat: 37.513571,
+    lng: 127.0622582
+  };
   var google = window.google;
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 3,
@@ -83,14 +91,30 @@ function initMap() {
       }]
     }]
   });
-  var marker = new google.maps.Marker({
+  var markerMoscow = new google.maps.Marker({
     position: moscow,
     icon: {
       url: './images/map-marker.svg'
     },
     map: map
   });
-  return marker;
+  var markerMilan = new google.maps.Marker({
+    position: milan,
+    icon: {
+      url: './images/map-marker.svg'
+    },
+    map: map
+  });
+  var markerSeoul = new google.maps.Marker({
+    position: seoul,
+    icon: {
+      url: './images/map-marker.svg'
+    },
+    map: map
+  });
+  return markerMilan;
+  return markerMoscow;
+  return markerSeoul;
 }
 
 document.addEventListener('DOMContentLoaded', function () {

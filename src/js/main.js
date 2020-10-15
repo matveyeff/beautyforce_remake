@@ -11,6 +11,8 @@ langSwitcher.addEventListener('click', (e) => {
 
 function initMap() {
 	const moscow = { lat: 55.712632, lng: 37.628248 };
+	const milan = { lat: 45.511279, lng: 9.2078201 };
+	const seoul = { lat: 37.513571, lng: 127.0622582 };
 	const google = window.google;
 	const map = new google.maps.Map(document.getElementById('map'), {
 		zoom: 3,
@@ -105,14 +107,30 @@ function initMap() {
 			},
 		],
 	});
-	let marker = new google.maps.Marker({
+	let markerMoscow = new google.maps.Marker({
 		position: moscow,
 		icon: {
 			url: './images/map-marker.svg'
 		},
 		map: map
 	});
-	return marker;
+	let markerMilan = new google.maps.Marker({
+		position: milan,
+		icon: {
+			url: './images/map-marker.svg'
+		},
+		map: map
+	});
+	let markerSeoul = new google.maps.Marker({
+		position: seoul,
+		icon: {
+			url: './images/map-marker.svg'
+		},
+		map: map
+	});
+	return markerMilan;
+	return markerMoscow;
+	return markerSeoul;
 }
 
 document.addEventListener('DOMContentLoaded', () => {
