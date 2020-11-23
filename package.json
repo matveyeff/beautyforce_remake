@@ -12,8 +12,8 @@
   "author": "Dmitrii Matveev",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.12.3",
-    "@babel/preset-env": "^7.12.1",
+    "@babel/core": "^7.12.7",
+    "@babel/preset-env": "^7.12.7",
     "browser-sync": "^2.26.13",
     "del": "^6.0.0",
     "eslint-config-airbnb-base": "^14.2.1",
