@@ -1,0 +1,17 @@
+.page-press {
+	padding-top: 75px;
+	background-color: $main;
+
+	&__title {
+		margin-bottom: 25px;
+		font-size: 110px;
+		font-weight: 100;
+		line-height: 100%;
+		text-transform: uppercase;
+		letter-spacing: -0.05em;
+	}
+
+	&__months {
+		margin-bottom: 75px;
+	}
+}

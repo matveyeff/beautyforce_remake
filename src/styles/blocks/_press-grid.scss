@@ -1,0 +1,50 @@
+.press-grid {
+	margin-bottom: 25px;
+
+	&__list {
+		display: grid;
+		grid-template-areas: ". .";
+		grid-template-rows: auto;
+		gap: 50px 50px;
+		margin-bottom: 55px;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		padding-top: 25px;
+		border-top: 1px solid $white;
+	}
+
+	&__item-header {
+		flex-grow: 1;
+	}
+
+	&__item-title {
+		flex-grow: 1;
+		margin-bottom: 15px;
+		font-size: 24px;
+		font-weight: 200;
+		line-height: 31px;
+		text-transform: uppercase;
+	}
+
+	&__item-desc {
+		margin-bottom: 25px;
+		font-size: 16px;
+		line-height: 150%;
+		color: #8f8c9e;
+	}
+
+	&__pic {
+		margin-bottom: 25px;
+	}
+
+	&__title {
+		margin-bottom: 25px;
+		font-size: 50px;
+		line-height: 64px;
+		color: #8f8c9e;
+		text-transform: uppercase;
+	}
+}
