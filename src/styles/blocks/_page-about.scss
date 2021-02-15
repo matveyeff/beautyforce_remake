@@ -1,6 +1,6 @@
 .page-about {
 	&__section {
-		padding: 150px 0 100px 0;
+		padding: 50px 0 100px 0;
 	}
 
 	&__desc {
@@ -109,12 +109,11 @@
 		background-color: $white;
 	}
 
-	&__history-subtitle {
+	&__history-years {
 		font-size: 110px;
 		font-weight: 100;
 		line-height: 100%;
 		color: #8f8c9e;
-		text-align: right;
 		letter-spacing: -0.05em;
 
 		span {
@@ -125,39 +124,27 @@
 	&__history-content {
 		display: flex;
 		flex-direction: column;
-		align-items: flex-end;
-		justify-content: flex-end;
-		width: 50%;
 	}
 
 	&__history-item {
 		display: flex;
 		justify-content: flex-start;
 		margin-bottom: 100px;
+		margin-left: 25%;
 
 		&:last-child {
 			margin-bottom: 0;
 		}
+	}
 
-		&:nth-child(even) {
-			justify-content: flex-end;
-
-			.page-about__history-content {
-				align-items: flex-start;
-			}
-		}
-
-		&:nth-child(odd) {
-			.page-about__history-subtitle {
-				transform: translateX(140px);
-			}
-		}
+	&__history-item_right {
+		margin-left: 50%;
 	}
 
 	&__history-title {
 		max-width: 575px;
 		margin-bottom: 100px;
-		margin-left: 325px;
+		margin-left: 25%;
 		font-size: 110px;
 		font-weight: 100;
 		line-height: 100%;
@@ -169,17 +156,131 @@
 	&__history-text {
 		max-width: 450px;
 		line-height: 24px;
+		line-height: 30px;
 		color: #8f8c9e;
-		text-align: right;
 
 		span {
 			color: #1f1a3d;
 		}
 	}
 
+	&__history-text-title {
+		font-size: 24px;
+		color: #8f8c9e;
+	}
+
+	&__history-text-subtitle {
+		font-size: 24px;
+		color: #1f1a3d;
+	}
+
 	&__history-text_right {
 		max-width: 450px;
 		color: #8f8c9e;
 		text-align: left;
+	}
+
+	&__show {
+		padding-top: 150px;
+	}
+
+	&__show-title {
+		margin-bottom: 25px;
+		font-size: 14px;
+		color: #8f8c9e;
+		text-transform: uppercase;
+	}
+
+	&__show-subtitle {
+		font-size: 50px;
+		text-transform: uppercase;
+	}
+
+	&__show-list {
+		display: flex;
+		flex-wrap: wrap;
+		padding-bottom: 50px;
+		margin-top: 75px;
+	}
+
+	&__show-item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 320px;
+		height: 320px;
+		background: $white;
+		border-radius: 50%;
+		transform: scale(1.1);
+	}
+
+	&__show-item_dark {
+		background-color: #e9e8ec;
+	}
+
+	&__philosophy {
+		padding: 150px 0;
+	}
+
+	&__philosophy-title {
+		margin-bottom: 50px;
+		margin-left: 50%;
+		font-size: 50px;
+		text-transform: uppercase;
+	}
+
+	&__philosophy-content {
+		display: flex;
+		padding-top: 50px;
+		border-top: 1px solid $white;
+	}
+
+	&__philosophy-pics {
+		display: flex;
+		flex-basis: 50%;
+		flex-flow: wrap;
+		justify-content: center;
+	}
+
+	&__philosophy-pic {
+		display: flex;
+		margin-bottom: 25px;
+
+		&:nth-child(1),
+		&:nth-child(3) {
+			justify-content: flex-end;
+			padding-right: 25px;
+		}
+
+		&:nth-child(2) {
+			align-self: flex-end;
+		}
+	}
+
+	&__philosophy-img {
+		display: block;
+		align-self: flex-start;
+	}
+
+	&__philosophy-desc {
+		flex-basis: 50%;
+		padding-right: 25px;
+	}
+
+	&__philosophy-desc-title {
+		margin-bottom: 25px;
+		font-size: 24px;
+		line-height: 31px;
+		text-transform: uppercase;
+	}
+
+	&__philosophy-desc-text {
+		display: flex;
+		justify-content: space-between;
+
+		p {
+			max-width: 300px;
+			line-height: 24px;
+		}
 	}
 }

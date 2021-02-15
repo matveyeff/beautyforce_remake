@@ -12,7 +12,7 @@ module.exports = function imageMinify() {
     .pipe(buffer())
     .pipe(imagemin([
       imagemin.mozjpeg({
-        quality: 75,
+        quality: 95,
         progressive: true
       }),
       imagemin.optipng({optimizationLevel: 3}),

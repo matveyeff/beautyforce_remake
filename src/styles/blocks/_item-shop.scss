@@ -1,0 +1,49 @@
+.item-shop {
+	max-height: 310px;
+
+	&__content {
+		display: flex;
+		align-items: center;
+	}
+
+	&__icon {
+		max-width: 200px;
+	}
+
+	&__line {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 50px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__title {
+		padding-bottom: 5px;
+		margin-bottom: 15px;
+		font-size: 50px;
+		border-bottom: 1px $white solid;
+	}
+
+	&__subtitle {
+		font-size: 16px;
+	}
+
+	&__desc {
+		width: 100%;
+		padding: 0 45px 0 30px;
+	}
+
+	&__pic {
+		display: flex;
+		flex-shrink: 0;
+		align-items: center;
+		justify-content: center;
+		width: 310px;
+		height: 310px;
+		margin-right: 15px;
+		border: 1px $white solid;
+	}
+}

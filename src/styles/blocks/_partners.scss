@@ -2,12 +2,17 @@
 	padding: 100px 0;
 
 	&__content {
-		padding: 50px 0;
+		padding: 50px 0 0 0;
 		border-top: 1px solid $white;
 	}
 
 	&__grid {
 		position: relative;
+		display: grid;
+		grid-template-areas:
+			". . . ."
+			". . . .";
+		gap: 15px 15px;
 		margin-top: 75px;
 	}
 
@@ -17,15 +22,15 @@
 		left: 50%;
 		z-index: 99;
 		padding: 0;
-		color: $white;
-		background-color: $main;
+		color: $main;
+		background-color: $white;
 		border: 1px solid $white;
 		transform: translate(-50%, -50%);
 
 		&:hover {
-			color: $main;
-			background-color: $white;
-			border: 1px solid $main;
+			color: $white;
+			background-color: $main;
+			border: 1px solid $white;
 		}
 	}
 
@@ -39,19 +44,9 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 320px;
-		height: 320px;
-		background-color: $white;
-		border-radius: 50%;
-		transform: scale(1.09);
-	}
-
-	&__item--color-grey {
-		background-color: #e9e8ec;
-	}
-
-	&__item--position-above {
-		z-index: 9;
+		height: 308px;
+		background-color: transparent;
+		border: 1px solid #504c67;
 	}
 
 	&__logo {

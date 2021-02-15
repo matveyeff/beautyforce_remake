@@ -1,8 +1,8 @@
 .marketing {
-	padding: 100px 0 0 0;
+	padding: 50px 0 0 0;
 
 	&__content {
-		display: flex;
+		padding-top: 50px;
 		border-top: 1px solid $white;
 	}
 
@@ -27,6 +27,6 @@
 	}
 
 	&__btn {
-		margin: 50px auto 0 auto;
+		margin-top: 50px;
 	}
 }

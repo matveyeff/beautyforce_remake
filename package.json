@@ -12,8 +12,8 @@
   "author": "Dmitrii Matveev",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.12.7",
-    "@babel/preset-env": "^7.12.7",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
     "browser-sync": "^2.26.13",
     "del": "^6.0.0",
     "eslint-config-airbnb-base": "^14.2.1",
@@ -44,17 +44,17 @@
     "gulp-svg-sprite": "^1.5.0",
     "gulp-svgmin": "^3.0.0",
     "gulp-uglify": "^3.0.2",
-    "gulp-w3c-html-validator": "^2.0.1",
+    "gulp-w3c-html-validator": "^3.0.0",
     "gulp.spritesmith": "^6.11.0",
     "jquery": "^3.5.1",
     "merge-stream": "^2.0.0",
-    "stylelint": "^13.8.0",
+    "stylelint": "^13.9.0",
     "stylelint-config-recess-order": "^2.3.0",
     "stylelint-config-standard-scss": "^1.1.0",
     "stylelint-order": "^4.1.0",
     "stylelint-scss": "^3.18.0",
     "vinyl-buffer": "^1.0.1",
-    "yargs": "^16.1.1"
+    "yargs": "^16.2.0"
   },
   "dependencies": {
     "normalize.css": "^8.0.1",

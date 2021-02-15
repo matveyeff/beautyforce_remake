@@ -1,0 +1,258 @@
+extends layout/main
+
+block variables
+	-var title = 'Партнерство |'
+
+block content
+	.page-partnership
+		section.page-partnership__section
+			.container
+				.page-partnership__desc
+					h1.page-partnership__title Партнерство
+					.page-partnership__desc-text
+						p Стабильность, честность #[br] и инклюзивность – главные ценности #[br] нашей компании. #[span.page-partnershipt__desc-text_accent Именно поэтому #[br] мы] выбираем долгосрочные #[br] отношения #[span.page-partnership__desc-text_accent со всеми контрагентами,#[br] а также] создаем #[span.page-partnership__desc-text_accent максимально] #[br] комфортные условия работы #[span.page-partnership__desc-text_accent #[br] и] обеспечиваем #[span.page-partnership__desc-text_accent полное] #[br] сопровождение #[span.page-partnershipt__desc-text_accent и] поддержку #[span.page-partnership__desc-text_accent своим] #[br] партнерам
+		section.page-partnership__assortment
+			.container
+				.page-partnership__assortment-content
+					h2.page-partnership__assortment-subtitle Ассортимент
+					ul.page-partnership__assortment-list
+						li.page-partnership__assortment-item
+							p Эксклюзивный импортер #[br]корейских брендов
+						li.page-partnership__assortment-item
+							p Официальный партнер Coty #[br]Inc.
+						li.page-partnership__assortment-item
+							p Официальный дилер #[br]компании Swarovski
+				img.page-about__img(src="images/partnership.jpg", alt="Beauty Force team")
+		section.page-partnership__categories
+			.container
+				.page-partnership__categories-content
+					h2.page-partnership__subtitle Продукты разных #[br]категорий
+					ul.page-partnership__categories-list
+						li.page-partnership__categories-item
+							a(href="#").page-partnership__categories-link
+								+icon('face', 'page-partnership__categories-icon')
+								span.page-partnership__categories-text Уход за лицом
+						li.page-partnership__categories-item
+							a(href="#").page-partnership__categories-link
+								+icon('hair', 'page-partnership__categories-icon')
+								span.page-partnership__categories-text Уход за волосами
+						li.page-partnership__categories-item
+							a(href="#").page-partnership__categories-link
+								+icon('body', 'page-partnership__categories-icon')
+								span.page-partnership__categories-text Уход за телом
+						li.page-partnership__categories-item
+							a(href="#").page-partnership__categories-link
+								+icon('makeup', 'page-partnership__categories-icon')
+								span.page-partnership__categories-text Мейкап
+						li.page-partnership__categories-item
+							a(href="#").page-partnership__categories-link
+								+icon('hygiene', 'page-partnership__categories-icon')
+								span.page-partnership__categories-text Гигиена
+					a.btn.page-partnership__categories-btn(href="#") Смотреть больше в каталоге
+		section.page-partnership__shops
+			.container
+				.page-partnership__shops-content
+					ul.page-partnership__shops-list
+						li.page-partnership__shops-item.item-shop
+							.item-shop__content
+								.item-shop__pic
+									+icon('wildberries', 'item-shop__icon')
+								.item-shop__desc
+									.item-shop__line
+										span.item-shop__title 8 M
+										span.item-shop__subtitle посетителей в сутки
+									.item-shop__line
+										span.item-shop__title 940 K
+										span.item-shop__subtitle заказов в день
+						li.page-partnership__shops-item.item-shop
+							.item-shop__content
+								.item-shop__pic
+									+icon('ozon', 'item-shop__icon')
+								.item-shop__desc
+									.item-shop__line
+										span.item-shop__title 30 M
+										span.item-shop__subtitle покупателей в год
+									.item-shop__line
+										span.item-shop__title 180 K
+										span.item-shop__subtitle заказов в день
+						li.page-partnership__shops-item.item-shop
+							.item-shop__content
+								.item-shop__pic
+									+icon('yandex-market', 'item-shop__icon')
+								.item-shop__desc
+									.item-shop__line
+										span.item-shop__title 4 B
+										span.item-shop__subtitle оборот в месяц
+									.item-shop__line
+										span.item-shop__title 4,5 M
+										span.item-shop__subtitle посетителей в день
+						li.page-partnership__shops-item.item-shop
+							.item-shop__content
+								.item-shop__pic
+									+icon('lamoda', 'item-shop__icon')
+								.item-shop__desc
+									.item-shop__line
+										span.item-shop__title 16 M
+										span.item-shop__subtitle пользователей в день
+									.item-shop__line
+										span.item-shop__title 17 K
+										span.item-shop__subtitle пунктов выдачи заказов
+						li.page-partnership__shops-item.item-shop
+							.item-shop__content
+								.item-shop__pic
+									+icon('letu', 'item-shop__icon')
+								.item-shop__desc
+									.item-shop__line
+										span.item-shop__title 1B+ $
+										span.item-shop__subtitle Оборот компании
+									.item-shop__line
+										span.item-shop__title 1 K
+										span.item-shop__subtitle магазинов по России
+						li.page-partnership__shops-item.item-shop
+							.item-shop__content
+								.item-shop__pic
+									+icon('kupivip', 'item-shop__icon')
+								.item-shop__desc
+									.item-shop__line
+										span.item-shop__title 170 K
+										span.item-shop__subtitle заказов в день
+									.item-shop__line
+										span.item-shop__title 70
+										span.item-shop__subtitle региональных центров доставки
+					span.page-partnership__shops-data Данные взяты из открытых источников
+		section.page-partnership__map
+			.container
+				h2.page-partnership__subtitle.no-margin Мы представлены
+				img.page-partnership__map-img(src="images/map.png", alt="")
+		section.page-partnership__terms
+			.container
+				h2.page-partnership__subtitle.page-partnership__subtitle_dark Выгодные условия #[br]партнерам
+				ul.page-partnership__terms-list
+					li.page-partnership__terms-item.item-terms
+						+icon('terms-01', 'item-terms__icon')
+						h3.item-terms__title Соответствие товара
+						ul.item-terms__list
+							li.item-terms__item
+								p — Вся продукция сертифицирована
+							li.item-terms__item
+								p — Срок годности не менее 50% от общего срока годности
+							li.item-terms__item
+								p — Все стикеры соответствуют требованиям законодательства
+							li.item-terms__item
+								p — Высокий уровень сервиса, четкий отлаженный механизм по работе с клиентами
+					li.page-partnership__terms-item.item-terms
+						+icon('terms-02', 'item-terms__icon')
+						h3.item-terms__title Цены и доставка
+						ul.item-terms__list
+							li.item-terms__item
+								p — Бесплатная доставка заказов от 100 000 ₽
+							li.item-terms__item
+								p — Отгружаем заказ в течении 3-х к/дней
+							li.item-terms__item
+								p — Выгодная наценка
+							li.item-terms__item
+								p — Цены включают НДС
+							li.item-terms__item
+								p — Ретро-бонус за объем продаж
+					li.page-partnership__terms-item.item-terms
+						+icon('terms-03', 'item-terms__icon')
+						h3.item-terms__title Акции
+						ul.item-terms__list
+							li.item-terms__item
+								p — Вся продукция сертифицирована
+							li.item-terms__item
+								p — Срок годности не менее 50% от общего срока годности
+							li.item-terms__item
+								p — Все стикеры соответствуют требованиям законодательства
+							li.item-terms__item
+								p — Высокий уровень сервиса, четкий отлаженный механизм по работе с клиентами
+				a.btn.btn_color-dark.page-partnership__terms-link(href="#") Обсудить сотрудничество
+		section.page-partnership__services
+			.container
+				h2.page-partnership__services-title Услуги
+				ul.page-partnership__services-list
+					li.page-partnership__services-item
+						span.page-partnership__services-number 01
+						h3.page-partnership__services-subtitle Маркетинг
+						p.page-partnership__services-desc Наша команда создает маркетинговую стратегию, которая включает в себя анализ конкурентов, взаимодействие со СМИ, блоггерами, продвижение в социальных сетях, настройка SEO и контекстной рекламы.
+					li.page-partnership__services-item
+						span.page-partnership__services-number 02
+						h3.page-partnership__services-subtitle ВЭД
+						p.page-partnership__services-desc Наша команда полностью отвечает за импорт брендов: мы напрямую заключаем договоры с контрагентами, работаем только с проверенными транспортными компаниями, регистрируем импортируемую продукцию, проходим все таможенные процессы.
+					li.page-partnership__services-item
+						span.page-partnership__services-number 03
+						h3.page-partnership__services-subtitle Сертификация
+						p.page-partnership__services-desc Все бренды импортируются согласно законодательству Российской Федерации и проходят тщательный этап сертификации и маркировки.
+					li.page-partnership__services-item
+						span.page-partnership__services-number 04
+						h3.page-partnership__services-subtitle Позиционирование бренда
+						p.page-partnership__services-desc Для каждого бренда мы определяем целевую аудиторию, подбираем концепцию позиционирования, создаем стратегии и анализируем рекламные и pr-кампании, которые будут последовательны и планомерны.
+					li.page-partnership__services-item
+						span.page-partnership__services-number 05
+						h3.page-partnership__services-subtitle Хранение и обработка товаров
+						p.page-partnership__services-desc Одно из наших преимуществ - наличие собственного складского помещения, где мы бережно храним товар с соблюдением температурных режимов, а также оказываем предпродажную подготовку.
+					li.page-partnership__services-item
+						span.page-partnership__services-number 06
+						h3.page-partnership__services-subtitle Авторизация #[br]в маркетплейсах
+						p.page-partnership__services-desc Наши менеджеры ежедневно работают с самыми большими маркетплейсами России. Мы знаем все о том, как создать свою витрину на всех платформах, какие технические требования к товарам и информационным материалам.
+					li.page-partnership__services-item
+						span.page-partnership__services-number 07
+						h3.page-partnership__services-subtitle Юридическая поддержка
+						p.page-partnership__services-desc В нашей команде есть профессиональные юристы, которые полностью обеспечивают и подготавливают все необходимые документы для импорта и дистрибьюции брендов.
+		section.page-partnership__partners
+			.container
+				.page-partnership__partners-content
+					h2.page-partnership__subtitle сотрудничаем
+					ul.page-partnership__partners-list
+						li.page-partnership__partners-item.page-partnership__partners-item_dark
+							.icon-kotra
+						li.page-partnership__partners-item
+							.icon-kita
+						li.page-partnership__partners-item.page-partnership__partners-item_dark
+							.icon-tpprf
+						li.page-partnership__partners-item
+							.icon-major
+						li.page-partnership__partners-item
+							.icon-gobiz
+						li.page-partnership__partners-item.page-partnership__partners-item_dark
+							.icon-dhl
+						li.page-partnership__partners-item
+							.icon-coty
+						li.page-partnership__partners-item.page-partnership__partners-item_dark
+							.icon-swarovski
+		section.section-form
+			.container
+				.section-form__content
+					.section-form__left
+						h2.section__title Контакты
+						h3.section__subtitle Сделаем первый шаг #[br]к сотрудничеству
+						form.mainform#mainform
+							.mainform__row
+								input(class="mainform__input" type="tel" id="phone" placeholder="Телефон" name="phone" required)
+								label(class="mainform__label" for="phone") Телефон*
+							.mainform__row
+								input(class="mainform__input" type="text" id="contface" placeholder="Контактное лицо" name="contface" required)
+								label(class="mainform__label" for="contface") Контактное лицо*
+							.mainform__row
+								input(class="mainform__input" type="text" id="email" placeholder="Электронная почта" name="email" required)
+								label(class="mainform__label" for="email") Электронная почта*
+							.mainform__row
+								input(class="mainform__input" type="text" id="company" placeholder="Компания" name="company" required)
+								label(class="mainform__label" for="company") Компания*
+							.mainform__row.mainform__row_flex
+								button.btn.mainform__btn(class="mainform__button" type="submit") Отправить
+								span.mainform__disclaimer Нажимая кнопку, вы соглашаетесь #[br]с политикой конфиденциальности
+					.section-form__right
+						.section-form__contacts
+							.section-form__row
+								a(href="#").section-form__title.section-form__title_size-xl +7 (499) 409-21-80
+								a(href="#").section-form__subtitle info@beforce.ru
+							.section-form__row
+								span.section-form__subtitle Москва, ул. Павловская, д. 27, стр. 4
+							.section-form__row
+								span.section-form__title Офис
+								span.section-form__subtitle Пн - Пт 10:00 - 18:00
+							.section-form__row
+								span.section-form__title Склад
+								span.section-form__subtitle Пн - Пт 10:00 - 20:00
+

@@ -1,5 +1,6 @@
 .branches {
-	padding: 50px 0;
+	padding: 50px 0 0 0;
+	margin-bottom: 75px;
 
 	&__list {
 		display: flex;
@@ -8,12 +9,8 @@
 
 	&__item {
 		position: relative;
-		flex-basis: 25%;
+		flex-basis: 33.3333%;
 		padding-top: 50px;
-
-		&:first-child {
-			flex-basis: 50%;
-		}
 
 		&::after {
 			position: absolute;
@@ -28,7 +25,7 @@
 
 	&__title {
 		margin-bottom: 25px;
-		font-size: 50px;
+		font-size: 45px;
 		line-height: 64px;
 		text-transform: uppercase;
 	}
